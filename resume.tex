@@ -1,0 +1,185 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Plasmati Graduate CV
+% LaTeX Template
+% Version 1.0 (24/3/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Alessandro Plasmati (alessandro.plasmati@gmail.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creivecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template needs to be compiled with XeLaTeX.
+% The main document font is called Fontin and can be downloaded for free
+% from here: http://www.exljbris.com/fontin.html
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[a4paper,11pt]{extarticle} % Default font size and paper size
+
+\usepackage{fontspec} % For loading fonts
+\defaultfontfeatures{Mapping=tex-text}
+% \setmainfont[SmallCapsFont = Fontin SmallCaps]{Fontin} % Main document font
+% \fontspec{[FontAwesome.otf]}
+\setmainfont[Path = ./Ubuntu/,  %% Optional; but UPDATE this if 
+                                %% your font files are in a folder
+ Extension = .ttf,
+ UprightFont = *-Regular,
+ BoldFont = *-Bold,
+ ItalicFont = *-Italic,
+ SmallCapsFont = *-Medium]
+{Ubuntu}
+\fontspec{[fontawesome-webfont.ttf]}
+
+\usepackage{color}
+\definecolor{primary}{rgb}{0.4, 0, 0.1}
+\definecolor{secondary}{rgb}{0, 0, 0}
+
+\usepackage{xunicode,xltxtra,url,parskip} % Formatting packages
+
+\usepackage[usenames,dvipsnames]{xcolor} % Required for specifying custom colors
+
+%\usepackage[big]{layaureo} % Margin formatting of the A4 page, an alternative to layaureo can be 
+%\usepackage{fullpage}
+\usepackage{geometry}
+\geometry{a4paper,margin=0.40cm}
+%\geometry{a4paper,left=20mm, top=20mm}
+ %To reduce the height of the top margin uncomment: \addtolength{\voffset}{-1.3cm}
+
+\usepackage{hyperref} % Required for adding links	and customizing them
+\definecolor{linkcolour}{rgb}{0,0.4,0.5} % Link color
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour} % Set link colors throughout the document
+
+\usepackage{titlesec} % Used to customize the \section command
+\titleformat{\section}{\large\scshape\raggedright}{}{0em}{}[\titlerule] % Text formatting of sections
+\titlespacing{\section}{0pt}{0pt}{0pt} % Spacing around sections
+
+\usepackage{multicol}
+\setlength{\columnsep}{0cm}
+
+\usepackage{tabularx}
+
+\usepackage{textcomp}
+
+\usepackage{fontawesome}
+
+\usepackage{enumitem}
+\setlist[description]{%
+  topsep=10pt,               % space before start / after end of list
+  itemsep=1pt,               % space between items
+%  font={\bfseries\sffamily\color{red}}, % if colour is needed
+}
+
+\def\arraystretch{1}
+\renewcommand{\baselinestretch}{1.1}
+
+\begin{document}
+
+\pagestyle{empty} % Removes page numbering
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION
+%----------------------------------------------------------------------------------------
+\begin{multicols}{3}
+
+\normalsize  \faEnvelope\ {\href{samhitha.sriraman@sjsu.edu }{\  samhitha.sriraman@sjsu.edu}}\\
+\normalsize \faPhone\ {\href{}{\  858 308 6462}}\\
+\columnbreak
+\normalsize\par{\centering{\huge\textsc{\textcolor{primary}{Samhitha Sriraman }}}\par} 
+\par{\centering\normalsize {San Jose, California}\hfill\par}
+\columnbreak
+\raggedright\hfill\normalsize \faLinkedinSquare\ {\href{https://www.linkedin.com/in/samhithasrirama/}{\  LinkedIn}}\\
+\end{multicols}
+\vspace{-0.4 cm}
+%----------------------------------------------------------------------------------------
+%	SKILLS 
+%----------------------------------------------------------------------------------------
+ \vspace{+0.4cm} \section{\textcolor{primary}{\href{https://www.github.com/proffapt/bodhitree}{Technical Skills}}}
+
+ \vspace{+0.2cm}
+
+ \begin{tabular}{r|p{15cm}}
+ \textsc{Languages} & Java/J2EE, Scala, JavaScript, MySQL, XML, HTML, Python, Node JS, Kafka\\
+ \textsc{Technologies \&Frameworks}& Spring, Angular, Spring Boot, REST, Microservices, AWS, Jenkins, Git\\
+ \textsc{DBMS} &  MySQL, Oracle DB, MongoDB, PostgreSQL\\
+ \textsc{Project Management}& Agile, Scrum, Kanban, Waterfall, Jira,Project Lifecycle Management, Cross-functional Team Leadership, Stakeholder
+Communication, Risk Mitigation, Budget Management\\
+ % \textsc{Others} & Git, GitHub, GitLab, Proxmox, Backend Development, Web Browser Extension Development \\
+ 
+ % -------- ToAdd but not confident enough -----------
+ %  React.js, Data Structures and Algorithms
+ % ----------
+\end{tabular}
+
+
+
+% ----------------------------------------------------------------------------------------
+% 	EXPERIENCE
+% ----------------------------------------------------------------------------------------
+\vspace{+0.2cm}
+\section{\textcolor{primary}{Experience}}
+\vspace{+0.1cm}
+% \fontsize{9}{12}\selectfont{
+
+\begin{itemize}[leftmargin=0.55cm, rightmargin=0.2cm, label={\Large\textbullet}]
+
+\item \textbf{Technical Program Manager| \href{}{University Of Chicago}} \hfill{\textit{Aug '23 - Present}} \\
+- Led backend development and technical program management for a Spring-based financial platform, optimizing payment workflows for 5,000+ users.\newline
+- Improved release efficiency by reducing deployment time by 25\% through Jenkins automation and Agile best practices, driving continuous integration and delivery.
+\newline
+- Built AI-driven risk assessment models at Phoenix AI, enhancing fraud detection and anomaly detection.
+ \newline
+- Designed and optimized RESTful APIs, reducing response times by 20\% through caching and  data modeling.\newline
+- Mentored 5 junior engineers driving  50+ code reviews, improving code quality  and  team productivity by 20\%.
+
+\item \textbf{Full Stack Engineer | \href{}{\textbf{NSEIT Ltd}
+}} \hfill{\textit{April '21 - Jan '22}} \\
+- Led a team of 5 engineers in developing BNX-Brunei Stock Exchange, increasing system reliability by 40\%.\newline
+- Managed full stack development using Java, Spring Boot, Angular and React with Microservices reducing \newline transaction processing time by 30\%.\newline
+- Spearheaded the design and implementation of 20+ front-end features, reducing page load time by 30\%.\newline
+- Delivered high-priority financial modules, ensuring 100\% on-time delivery across 3 major releases.\newline
+- Optimized MySQL databases, reducing query response times by 25\% and improving data throughput.\newline
+- Implemented security layers for the web application using \textbf{Spring Security and JWT-based authentication,} ensuring \textbf{secure API access and user authentication.}
+
+
+\item \textbf{Software Engineer | \href{}{\textbf{\textbf{Virtusa}}
+}} \hfill{\textit{Jan '21 - Apr '21}} \\
+- Liaised between clients and internal teams, ensuring alignment with project goals.\newline
+- Managed project timelines and resources, ensuring on-time delivery and adherence to budget.\newline
+- Migrated legacy systems to AWS/Docker, reducing costs by 40\% and boosting scalability.\newline
+- Enhanced data retrieval by 20\% through MVC integration with Spring, addressing customer needs.
+\item \textbf{Software Engineer | \href{}{\textbf{\textbf{Patterns Cognitive}}
+}} \hfill{\textit{Oct '17 - Dec '20}} \\
+-  \textbf{Led end-to-end software development lifecycle (SDLC) activities} for Tata Capital Financial Services, collaborating with cross-functional teams from \textbf{requirement gathering} and \textbf{system design} to \textbf{development, testing, and production deployment}, ensuring timely and efficient delivery of financial applications.\newline
+- Designed and implemented a robust lease invoicing automation tool, converting client requirements into software solutions that \textbf{streamlined monthly invoice generation} for customers reducing manual intervention.\newline
+- \textbf{Diagnosed and resolved data leakage issues,} optimizing backend data validation and error-handling mechanisms, which led to a \textbf{38\% improvement in application performance and data integrity.}\newline
+- Developed and deployed AI/ML-based cheque processing automation for Mashreq Bank, leveraging machine learning models to \textbf{reduce processing time and errors by 20\%}, enhancing financial transaction accuracy.\newline
+- Directed the implementation of automated workflows into outdated systems, increasing operational efficiency by processing 10,000+ transactions monthly with minimal errors.\newline}
+
+
+
+
+
+
+\end{itemize}
+
+% }
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+\section{\textcolor{primary}{Education}}
+\vspace{+0.2cm}
+
+  \textbf{San Jose state University}\hfill{\textit{\textbf{Dec 2025}}} \newline
+  \textit{Master of Business Administration}\newline
+    \textbf{Sastra University}\hfill{\textit{\textbf{June 2017}}} \newline
+ \textit{Bachelor and Master of Technology, Electronics and Communication Systems}
+\end{document}
